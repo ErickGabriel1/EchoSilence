@@ -1,5 +1,4 @@
-
-if (global.current_player == false){
+if (global.current_player == true){
 	var  tecla_cima = keyboard_check(ord("W"));
 	var  tecla_baixo = keyboard_check(ord("S"));
 	var  tecla_esquerda = keyboard_check(ord("A"));
