@@ -1,5 +1,5 @@
 
-if (global.current_player == true){
+if (global.current_player == true) && (global.dialogue == false){
 	var  tecla_cima = keyboard_check(ord("W"));
 	var  tecla_baixo = keyboard_check(ord("S"));
 	var  tecla_esquerda = keyboard_check(ord("A"));
@@ -30,4 +30,19 @@ if (global.current_player == true){
  
 	
 	y+=velv;
+	
+	#region Dialogue
+	if distance_to_object(obj_itens) <= 10 {
+
+		if keyboard_check_pressed(ord("E")){
+			var _item = instance_nearest(x, y, obj_itens)
+			var _dialogue = instance_create_layer(x, y, "Dialogue", obj_dialogue)
+			_dialogue.item_name = _item.name;
+		}
+		
+
+	}
+	#endregion
+	
 }
+

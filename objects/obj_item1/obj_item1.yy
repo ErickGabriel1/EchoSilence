@@ -1,20 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"obj_player1",
+  "%Name":"obj_item1",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_player1",
+  "name":"obj_item1",
   "overriddenProperties":[],
   "parent":{
-    "name":"players",
-    "path":"folders/Objetos/players.yy",
+    "name":"itens",
+    "path":"folders/Objetos/itens.yy",
   },
   "parentObjectId":{
-    "name":"obj_players",
-    "path":"objects/obj_players/obj_players.yy",
+    "name":"obj_itens",
+    "path":"objects/obj_itens/obj_itens.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -34,9 +33,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_player1",
-    "path":"sprites/spr_player1/spr_player1.yy",
+    "name":"spr_itens",
+    "path":"sprites/spr_itens/spr_itens.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

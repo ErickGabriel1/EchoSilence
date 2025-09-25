@@ -1,6 +1,10 @@
-if (keyboard_check_pressed(ord("Q")))
-{
+if (global.dialogue == false){
+
+	if (keyboard_check_pressed(ord("Q")))
+	{
     global.current_player = !global.current_player;
+	}
+
 }
 
 switch (global.current_player) 
@@ -28,3 +32,8 @@ switch (global.current_player)
     // Você pode adicionar mais 'cases' para mais personagens (case 3, case 4, etc.)
 }
 
+if instance_exists(obj_dialogue){
+
+	global.dialogue = true;
+
+}

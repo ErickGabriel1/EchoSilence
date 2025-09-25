@@ -1,16 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"obj_players",
+  "%Name":"obj_background",
   "eventList":[],
   "managed":true,
-  "name":"obj_players",
+  "name":"obj_background",
   "overriddenProperties":[],
   "parent":{
-    "name":"players",
-    "path":"folders/Objetos/players.yy",
+    "name":"Objetos",
+    "path":"folders/Objetos.yy",
   },
   "parentObjectId":null,
-  "persistent":true,
+  "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
   "physicsFriction":0.2,
@@ -27,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"Sprite10",
+    "path":"sprites/Sprite10/Sprite10.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
