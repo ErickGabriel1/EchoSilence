@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite10",
-    "path":"sprites/Sprite10/Sprite10.yy",
+    "name":"background",
+    "path":"sprites/background/background.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -29,7 +29,7 @@ if (global.current_player == false) && (global.dialogue == false){
 	}
  
 	
-	y+=velv;
+	y+=velv; 
 	
 	#region Dialogue
 	if distance_to_object(obj_itens) <= 10 {

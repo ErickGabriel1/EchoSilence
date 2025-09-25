@@ -3,7 +3,7 @@
 	initializer =  true; 
  }
  
- if mouse_check_button_pressed(mb_left){
+ if keyboard_check_pressed(vk_anykey) && !keyboard_check_pressed(ord("E")){
 	if page<array_length(text)- 1{
 	
 		page++;
