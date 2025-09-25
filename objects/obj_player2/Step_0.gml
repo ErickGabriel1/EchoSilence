@@ -1,3 +1,4 @@
+
 if (global.current_player == true){
 	var  tecla_cima = keyboard_check(ord("W"));
 	var  tecla_baixo = keyboard_check(ord("S"));
@@ -10,7 +11,23 @@ if (global.current_player == true){
 
 	velh = lengthdir_x(velc * tecla,dir);
 	velv = lengthdir_y(velc * tecla,dir);
-
+	
+	if place_meeting(x + velh, y, obj_wall) || place_meeting(x+velh, y, obj_player1){
+		while !place_meeting(x+sign(velh), y, obj_wall) && !place_meeting(x+sign(velh), y, obj_player1 ) {
+			x+=  sign(velh);
+		}
+		velh = 0;
+	}
+	
 	x+=velh;
+	
+	if place_meeting(x, y + velv, obj_wall) || place_meeting(x, y + velv, obj_player1){
+		while !place_meeting(x, y+sign(velv), obj_wall) & !place_meeting(x, y+sign(velv), obj_player1){
+			y+=  sign(velv);
+		}
+		velv = 0;
+	}
+ 
+	
 	y+=velv;
 }

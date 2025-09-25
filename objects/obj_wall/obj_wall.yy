@@ -1,12 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_palyer2",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_wall",
+  "eventList":[],
   "managed":true,
-  "name":"obj_palyer2",
+  "name":"obj_wall",
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos",
@@ -31,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_player2",
-    "path":"sprites/spr_player2/spr_player2.yy",
+    "name":"spr_wall",
+    "path":"sprites/spr_wall/spr_wall.yy",
   },
   "spriteMaskId":null,
   "visible":true,
