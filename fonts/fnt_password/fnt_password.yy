@@ -1,6 +1,6 @@
 {
   "$GMFont":"",
-  "%Name":"fnt_dialogue",
+  "%Name":"fnt_password",
   "AntiAlias":1,
   "applyKerning":0,
   "ascender":64,
@@ -212,7 +212,7 @@
   "last":0,
   "lineHeight":75,
   "maintainGms1Font":false,
-  "name":"fnt_dialogue",
+  "name":"fnt_password",
   "parent":{
     "name":"Fontes",
     "path":"folders/Fontes.yy",
