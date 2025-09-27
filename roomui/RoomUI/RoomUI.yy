@@ -29,7 +29,7 @@
               ],"flexDirection":0,"height":{"unit":2,"value":90.0,},"justifyContent":1,"name":"buttons","nodeColour":4292233458,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":2,"value":90.0,},},
             {"$GMRSpriteGraphic":"v1","%Name":"graphic_7A4B1D58","animationSpeed":1.0,"colour":4294967295,"flexProperties":{"$InstanceFlexProps":"v1","anchor":0,"resourceType":"InstanceFlexProps","stretchHeight":true,"stretchWidth":true,},"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_7A4B1D58","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_password_box","path":"sprites/spr_password_box/spr_password_box.yy",},"x":0.5,"y":0.0,},
           ],"flexDirection":0,"height":{"unit":2,"value":62.0,},"justifyContent":1,"name":"FlexPanel","nodeColour":4282970789,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":2,"value":25.0,},},
-      ],"flexDirection":0,"gridX":32,"gridY":32,"justifyContent":1,"name":"password_gui","nodeColour":4294079304,"resourceType":"GMRUILayer","resourceVersion":"2.0","visible":false,},
+      ],"flexDirection":0,"gridX":32,"gridY":32,"justifyContent":1,"name":"password_gui","nodeColour":4294079304,"resourceType":"GMRUILayer","resourceVersion":"2.0",},
   ],
   "visible":true,
 }
