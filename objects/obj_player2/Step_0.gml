@@ -1,35 +1,101 @@
 
 if (global.current_player == true) && (global.dialogue == false){
-	var  tecla_cima = keyboard_check(ord("W"));
-	var  tecla_baixo = keyboard_check(ord("S"));
-	var  tecla_esquerda = keyboard_check(ord("A"));
-	var  tecla_direita = keyboard_check(ord("D"));
+    // 1. Declara e zera as velocidades no início
+    var velh = 0;
+    var velv = 0;
+    // As variáveis tecla_cima, tecla_baixo, etc. estão OK
+	var tecla_cima = keyboard_check(ord("W"));
+    var tecla_baixo = keyboard_check(ord("S"));
+    var tecla_esquerda = keyboard_check(ord("A"));
+    var tecla_direita = keyboard_check(ord("D"));
+    
+    // 2. Lógica de Priorização (Mover apenas em 4 direções)
+    // velc deve ser a velocidade base (ex: 4)
 
-	var tecla = tecla_direita - tecla_esquerda != 0 || tecla_baixo - tecla_cima != 0;
+    // Prioriza o movimento horizontal
+    if (tecla_direita) {
+        velh = velc; // Assumindo que velc está em uma variável global ou local
+		direct = "direita"
+    } else if (tecla_esquerda) {
+        velh = -velc;
+		direct = "esquerda"
+    }
 
-	dir = point_direction(0,0,tecla_direita - tecla_esquerda,tecla_baixo - tecla_cima);
+    // Só permite movimento vertical se NÃO houver movimento horizontal
+    if (velh == 0) {
+        if (tecla_baixo) {
+            velv = velc;
+			direct = "baixo"
+        } else if (tecla_cima) {
+            velv = -velc;
+			direct = "cima"
+        }
+    }
+    
+    // O BLOCO DE CÓDIGO CONFLITANTE FOI REMOVIDO AQUI!
+    
+    // 3. Verifica Colisão Horizontal e move
+    if place_meeting(x + velh, y, obj_wall) || place_meeting(x + velh, y, obj_player1) {
+        while !place_meeting(x + sign(velh), y, obj_wall) && !place_meeting(x + sign(velh), y, obj_player1) {
+            x += sign(velh);
+        }
+        velh = 0;
+    }
+    
+    x += velh; // Move horizontalmente
+    
+    // 4. Verifica Colisão Vertical e move
+    if place_meeting(x, y + velv, obj_wall) || place_meeting(x, y + velv, obj_player1) {
+        while !place_meeting(x, y + sign(velv), obj_wall) & !place_meeting(x, y + sign(velv), obj_player1) {
+            y += sign(velv);
+        }
+        velv = 0;
+    }
+    
+    y += velv; // Move verticalmente
+	
+#region Direction
 
-	velh = lengthdir_x(velc * tecla,dir);
-	velv = lengthdir_y(velc * tecla,dir);
-	
-	if place_meeting(x + velh, y, obj_wall) || place_meeting(x+velh, y, obj_player1){
-		while !place_meeting(x+sign(velh), y, obj_wall) && !place_meeting(x+sign(velh), y, obj_player1 ) {
-			x+=  sign(velh);
-		}
-		velh = 0;
-	}
-	
-	x+=velh;
-	
-	if place_meeting(x, y + velv, obj_wall) || place_meeting(x, y + velv, obj_player1){
-		while !place_meeting(x, y+sign(velv), obj_wall) & !place_meeting(x, y+sign(velv), obj_player1){
-			y+=  sign(velv);
-		}
-		velv = 0;
-	}
- 
-	
-	y+=velv;
+    // 1. Define o estado de Animação (Walk vs. Idle)
+    // O estado é definido se QUALQUER tecla de movimento está pressionada.
+    if (tecla_direita || tecla_esquerda || tecla_cima || tecla_baixo) {
+        state = "walk"; 
+    } else {
+        state = "idle";
+    }
+
+    // 2. Lógica de virar o sprite (image_xscale)
+    // Isso deve ser feito com o input, pois não é afetado pela colisão.
+    if (tecla_direita) { 
+        image_xscale = -3;
+    } else if (tecla_esquerda) {
+        image_xscale = 3;
+    }
+
+    // 3. Troca o Sprite (Usa a lógica de PRIORIZAÇÃO do movimento para definir a animação)
+    if (state == "walk") {
+        // Prioridade Horizontal
+        if (tecla_direita || tecla_esquerda) { 
+            sprite_index = player2_walk_vertical;
+        } 
+        // Prioridade Vertical (só é checada se NENHUMA tecla horizontal está pressionada)
+        else if (tecla_baixo) { 
+            sprite_index = player2_walk_down;
+        } else if (tecla_cima) { 
+            sprite_index = player2_walk_top;
+        }
+    } else { // state == "idle"
+        // Lógica IDLE (Mantém a direção do sprite anterior)
+        if (sprite_index == player2_walk_vertical) {
+            sprite_index = player2_idle_vertical;
+        } else if (sprite_index == player2_walk_top) {
+            sprite_index = player2_idle_top;
+        } else if (sprite_index == player2_walk_down) {
+            sprite_index = player2_idle_down;
+        }
+    }
+
+#endregion
 	
 	#region Dialogue
 	if distance_to_object(obj_itens) <= 10 {
@@ -40,9 +106,7 @@ if (global.current_player == true) && (global.dialogue == false){
 			_dialogue.item_name = _item.name;
 		}
 		
-
 	}
 	#endregion
-	
 }
 
