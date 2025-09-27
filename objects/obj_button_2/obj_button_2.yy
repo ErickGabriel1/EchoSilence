@@ -6,8 +6,8 @@
   "name":"obj_button_2",
   "overriddenProperties":[],
   "parent":{
-    "name":"password_buttons",
-    "path":"folders/Objetos/password_buttons.yy",
+    "name":"password",
+    "path":"folders/Objetos/password.yy",
   },
   "parentObjectId":{
     "name":"buttons",

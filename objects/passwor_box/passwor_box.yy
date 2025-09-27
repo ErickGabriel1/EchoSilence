@@ -1,18 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"buttons",
-  "eventList":[],
+  "%Name":"passwor_box",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"buttons",
+  "name":"passwor_box",
   "overriddenProperties":[],
   "parent":{
     "name":"password",
     "path":"folders/Objetos/password.yy",
   },
-  "parentObjectId":{
-    "name":"button_controller",
-    "path":"objects/button_controller/button_controller.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

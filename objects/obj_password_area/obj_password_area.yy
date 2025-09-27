@@ -1,16 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"button_controller",
+  "%Name":"obj_password_area",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"button_controller",
+  "name":"obj_password_area",
   "overriddenProperties":[],
   "parent":{
-    "name":"password",
-    "path":"folders/Objetos/password.yy",
+    "name":"Objetos",
+    "path":"folders/Objetos.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_password_area",
+    "path":"sprites/spr_password_area/spr_password_area.yy",
+  },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }
