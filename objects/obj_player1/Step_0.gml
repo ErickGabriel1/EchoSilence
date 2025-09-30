@@ -1,4 +1,5 @@
- 
+
+
 if (global.current_player == false) && (global.dialogue == false){
     // 1. Declara e zera as velocidades no início
     var velh = 0;

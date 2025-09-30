@@ -13,8 +13,9 @@ else {
     }
 }
 
-if (place_meeting(x, y, obj_players)) {
+if (place_meeting(x, y, obj_players)) && (global.senha_foi_correta) {
     if (keyboard_check_pressed(ord("E"))){
 		room_goto_next();
+		global.senha_foi_correta = false;
 	}
 }
