@@ -1,4 +1,4 @@
-  
+ 
 if (global.current_player == false) && (global.dialogue == false){
     // 1. Declara e zera as velocidades no início
     var velh = 0;
@@ -30,9 +30,7 @@ if (global.current_player == false) && (global.dialogue == false){
             velv = -velc;
 			direct = "cima"
         }
-    }
-    
-    // O BLOCO DE CÓDIGO CONFLITANTE FOI REMOVIDO AQUI!
+    } 
     
     // 3. Verifica Colisão Horizontal e move
     if place_meeting(x + velh, y, obj_wall) || place_meeting(x + velh, y, obj_player2) {
@@ -97,7 +95,7 @@ if (global.current_player == false) && (global.dialogue == false){
 
 #endregion
 	
-	#region Dialogue
+#region Dialogue
 	if distance_to_object(obj_itens) <= 10 {
 
 		if keyboard_check_pressed(ord("E")){
@@ -107,7 +105,7 @@ if (global.current_player == false) && (global.dialogue == false){
 		}
 		
 	}
-	#endregion
+#endregion
 	
 }
 

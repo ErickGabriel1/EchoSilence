@@ -6,8 +6,8 @@
   "name":"buttons",
   "overriddenProperties":[],
   "parent":{
-    "name":"password",
-    "path":"folders/Objetos/password.yy",
+    "name":"number_password_interface",
+    "path":"folders/Objetos/number_password_interface.yy",
   },
   "parentObjectId":{
     "name":"button_controller",

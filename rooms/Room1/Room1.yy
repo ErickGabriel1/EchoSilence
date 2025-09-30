@@ -6,7 +6,6 @@
   "inheritCreationOrder":false,
   "inheritLayers":false,
   "instanceCreationOrder":[
-    {"name":"inst_55E771C9","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_2723CE91","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_2B34CBE2","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_90E2B8","path":"rooms/Room1/Room1.yy",},
@@ -31,6 +30,8 @@
     {"name":"inst_23DF977C","path":"roomui/RoomUI/RoomUI.yy",},
     {"name":"inst_4F361253","path":"roomui/RoomUI/RoomUI.yy",},
     {"name":"inst_30ABB967","path":"roomui/RoomUI/RoomUI.yy",},
+    {"name":"inst_17EBD2EF","path":"rooms/Room1/Room1.yy",},
+    {"name":"inst_55E771C9","path":"rooms/Room1/Room1.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -59,8 +60,10 @@
           0,-2,-2147483648,
         ],"TileDataFormat":1,},"tilesetId":{"name":"t_itens","path":"tilesets/t_itens/t_itens.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"fornitures_tile","depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"fornitures_tile","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":12,"SerialiseWidth":20,"TileCompressedData":[-165,-2147483648,-4,0,-17,-2147483648,-3,0,-51,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"t_furniture","path":"tilesets/t_furniture/t_furniture.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"$GMRTileLayer":"","%Name":"door_front_tile","depth":500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"door_front_tile","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":12,"SerialiseWidth":20,"TileCompressedData":[-29,-2147483648,2,8,9,-18,-2147483648,2,26,27,-18,-2147483648,2,44,45,-169,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"t_doors","path":"tilesets/t_doors/t_doors.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"$GMRTileLayer":"","%Name":"door_midlle_tile","depth":600,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"door_midlle_tile","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":12,"SerialiseWidth":20,"TileCompressedData":[-29,-2147483648,2,6,7,-18,-2147483648,2,24,25,-18,-2147483648,2,42,43,-169,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"t_doors","path":"tilesets/t_doors/t_doors.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+    {"$GMRTileLayer":"","%Name":"door_midlle_tile","depth":500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"door_midlle_tile","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":12,"SerialiseWidth":20,"TileCompressedData":[-29,-2147483648,2,6,7,-18,-2147483648,2,24,25,-18,-2147483648,2,42,43,-169,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"t_doors","path":"tilesets/t_doors/t_doors.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+    {"$GMRInstanceLayer":"","%Name":"door","depth":600,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
+        {"$GMRInstance":"v2","%Name":"inst_17EBD2EF","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_17EBD2EF","objectId":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":288.0,"y":32.0,},
+      ],"layers":[],"name":"door","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"door_back_tlile","depth":700,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"door_back_tlile","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":12,"SerialiseWidth":20,"TileCompressedData":[-29,-2147483648,2,4,5,-18,-2147483648,2,12,13,-18,-2147483648,2,20,21,-169,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"t_doors2","path":"tilesets/t_doors2/t_doors2.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"ground_tile","depth":800,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"ground_tile","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":12,"SerialiseWidth":20,"TileSerialiseData":[
           0,90,63,64,65,64,65,64,65,64,65,64,65,64,65,64,65,66,35,0,0,90,63,46,46,47,46,47,46,0,0,47,46,47,46,

@@ -8,8 +8,8 @@
   "name":"obj_item1",
   "overriddenProperties":[],
   "parent":{
-    "name":"itens",
-    "path":"folders/Objetos/itens.yy",
+    "name":"room1",
+    "path":"folders/Objetos/itens/room1.yy",
   },
   "parentObjectId":{
     "name":"obj_itens",
