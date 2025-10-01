@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"menu_echosilence",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":13.766531,
+  "name":"menu_echosilence",
+  "parent":{
+    "name":"sound",
+    "path":"folders/sound.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"menu_echosilence.wav",
+  "type":0,
+  "volume":1.0,
+}
