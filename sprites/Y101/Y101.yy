@@ -2,7 +2,7 @@
   "$GMSprite":"",
   "%Name":"Y101",
   "bboxMode":0,
-  "bbox_bottom":45,
+  "bbox_bottom":43,
   "bbox_left":0,
   "bbox_right":35,
   "bbox_top":15,

@@ -24,5 +24,6 @@
 
 	// 5. Agora, desenhe a string limpa que você construiu!
 	draw_text(x + 350, y + 105, string_para_desenhar);
+	draw_set_font(-1);
 
 #endregion
