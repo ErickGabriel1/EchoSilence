@@ -12,14 +12,20 @@ if (global.dialogue == false) {
 	
 }
 
-if (global.current_player == false){
-	layer_set_visible(ui_layer_player1, true);
-	layer_set_visible(ui_layer_player2, false);
-}
-else{
+
+
 	layer_set_visible(ui_layer_player1, false);
-	layer_set_visible(ui_layer_player2, true);
-}
+	layer_set_visible(ui_layer_player2, false);
+	
+	if (global.current_player == false){
+		layer_set_visible(ui_layer_player1, true);
+		layer_set_visible(ui_layer_player2, false);
+	}
+	else{
+		layer_set_visible(ui_layer_player1, false);
+		layer_set_visible(ui_layer_player2, true);
+	}
+
 
 #endregion
 

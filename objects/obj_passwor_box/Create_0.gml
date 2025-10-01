@@ -3,3 +3,5 @@ global.current_input = [];
 
 //Variável para armazenar a senha atual da room
 global.senha_correta = undefined;
+
+global.menu_desativado = false;

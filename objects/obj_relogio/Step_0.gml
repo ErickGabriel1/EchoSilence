@@ -1,7 +1,9 @@
 // Inicia a sequência quando o player interage e não está tocando
-if (!tocando_ativo && (place_meeting(x, y, obj_player1) || place_meeting(x, y, obj_player2)) && keyboard_check_pressed(ord("E"))) {
+if (!tocando_ativo && distance_to_object(obj_player1) <= 10 ){
+if (keyboard_check_pressed(ord("E"))) {
     tocando_ativo = true;
-    tocou = 0; // zera contador
+	tocou = 0; // zera contador
+}
 }
 
 // Executa os toques sequenciais automaticamente

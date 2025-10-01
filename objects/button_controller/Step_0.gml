@@ -103,9 +103,3 @@ if (keyboard_check(vk_backspace)) {
 
 
 
-if (global.senha_foi_correta) {
-    layer_destroy("password_gui");
-	with (obj_password_area) {
-    instance_destroy();
-	}
-}

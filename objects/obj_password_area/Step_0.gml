@@ -11,4 +11,8 @@
 				global.layer_view = false;
 				layer_set_visible(ui_layer_id, global.layer_view);
 	}
+	else if (global.menu_desativado == true){
+		global.layer_view = false;
+		layer_set_visible(ui_layer_id, false)
+	}
 #endregion
