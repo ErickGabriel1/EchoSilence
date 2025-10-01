@@ -94,6 +94,7 @@ if (global.current_player == false) && (global.dialogue == false){
         }
     }
 
+
 #endregion
 	
 #region Dialogue
@@ -109,4 +110,9 @@ if (global.current_player == false) && (global.dialogue == false){
 #endregion
 	
 }
+else{
+	state = "idle";
+}
+
+
 depth = -y
