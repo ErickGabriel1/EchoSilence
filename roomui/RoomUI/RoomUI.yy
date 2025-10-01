@@ -45,5 +45,5 @@
           ],"flexDirection":0,"height":{"unit":2,"value":62.0,},"justifyContent":1,"name":"FlexPanel","nodeColour":4282970789,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":2,"value":25.0,},},
       ],"flexDirection":0,"gridX":32,"gridY":32,"justifyContent":1,"name":"password_gui","nodeColour":4294079304,"resourceType":"GMRUILayer","resourceVersion":"2.0","visible":false,},
   ],
-  "visible":true,
+  "visible":false,
 }

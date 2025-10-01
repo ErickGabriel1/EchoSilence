@@ -61,4 +61,3 @@ else{
 		global.dialogue = false;
 	}
 #endregion
-
