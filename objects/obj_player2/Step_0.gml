@@ -110,3 +110,4 @@ if (global.current_player == true) && (global.dialogue == false){
 	#endregion
 }
 
+depth = -y
