@@ -1,7 +1,7 @@
 function scr_texts(){
 	switch item_name{
 		case "item1":
-			text[0] = "Do menor ao maior, o caminho se revela.";
+			text[0] = "Do menor ao maior, o caminho se revela. Pressione 'Q' para trocar de jogador";
 			break;
 			
 		case "item2":
@@ -28,6 +28,8 @@ function scr_texts(){
 				text[0] = "3";
 			}
 			break;
-		
+		case "item5":
+			text[0] = "O ritmo guia os passos para frente.";
+			break;
 	}
 }

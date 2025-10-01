@@ -2,7 +2,7 @@
   "$GMSprite":"",
   "%Name":"sino_rabisco",
   "bboxMode":0,
-  "bbox_bottom":25,
+  "bbox_bottom":26,
   "bbox_left":5,
   "bbox_right":26,
   "bbox_top":2,
