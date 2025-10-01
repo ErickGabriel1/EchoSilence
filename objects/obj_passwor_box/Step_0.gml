@@ -12,6 +12,5 @@
 #endregion
 
 if (global.senha_foi_correta) {
-	global.menu_desativado = true;
 	global.current_input = [];
 }
