@@ -22,7 +22,7 @@ Ou baixar o executável disponível neste repositório na seção **Releases**.
 
 - **Tema**: Diversidade
 - **Duração**: 1 semana
-- **Desenvolvedores**: [Erick Gabriel]([URL do repositório ou perfil](https://github.com/ErickGabriel1)) e [Pedro Fernandes](https://github.com/Lucas-Fernandes420)
+- **Desenvolvedores**: [Erick Gabriel](https://github.com/ErickGabriel1) e [Pedro Fernandes](https://github.com/Lucas-Fernandes420)
 
 
 ## 📄 Licença
