@@ -1,5 +1,3 @@
-# EchoSilence
-A game for a game jam with a diversity theme.
 # EchoSilence 🎮
 
 **EchoSilence** é um jogo narrativo desenvolvido no **GameMaker Studio 2** durante uma **GameJam universitária de uma semana**, com o tema **"Diversidade"**.
